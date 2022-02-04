@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { db, auth, storage } from '../firebase';
 import {
     collection,
@@ -13,7 +13,7 @@ import {
     getDoc,
     updateDoc,
 } from 'firebase/firestore';
-import { useState } from 'react/cjs/react.development';
+
 import User from '../components/User';
 
 import ChackNorris from '../components/ChackNorris';
